@@ -1,0 +1,86 @@
+## 2. CSS 선택자
+
+### 2.1 기본 선택자
+* [cite_start]전체 선택자 (`*`): 모든 태그 지정[cite: 556, 557].
+* [cite_start]태그 선택자 (`태그명`): 특정 태그명 지정[cite: 559, 560].
+* [cite_start]아이디 선택자 (`#id`): `id` 속성값 지정[cite: 562, 563].
+* [cite_start]클래스 선택자 (`.class`): `class` 속성값 지정[cite: 566, 567].
+* [cite_start]속성 선택자: `[속성]` (속성 유무), `[속성=값]` (정확히 일치), `[속성~=문자열]` (단어 기준 포함), `[속성^=문자열]` (시작함), `[속성$=문자열]` (끝남), `[속성*=문자열]` (전체 값 기준 포함)[cite: 569, 570, 574, 575, 576, 578, 579, 580].
+
+### 2.2 조합 선택자
+* [cite_start]그룹 선택자 (`,`): 여러 선택자를 묶음[cite: 582, 583].
+* [cite_start]자식 선택자 (`>`): 범위를 자식 관계로 제한[cite: 586, 587].
+* [cite_start]하위 선택자 (`공백`): 자식 및 자손 관계로 제한[cite: 591, 592].
+* [cite_start]인접 형제 선택자 (`+`): 가장 인접한 형제 태그 1개 선택[cite: 595, 596].
+* [cite_start]일반 형제 선택자 (`~`): 형제 관계의 모든 태그 선택[cite: 600, 601].
+
+### 2.3 가상 클래스 및 가상 요소 선택자
+* [cite_start]가상 요소 (`::before`, `::after`): 기준 선택자 요소 앞/뒤에 가상의 요소 생성[cite: 608, 609].
+* [cite_start]링크 상태 (`:link`, `:visited`): 방문 여부에 따른 상태[cite: 614, 615, 616].
+* [cite_start]동적 상태 (`:hover`, `:active`): 마우스 오버, 클릭 상태[cite: 618, 619, 620].
+* [cite_start]입력 요소 상태 (`:focus`, `:checked`, `:disabled`, `:enabled`): 활성화, 체크, 비활성, 활성 상태[cite: 621, 622, 623, 624, 625].
+* [cite_start]구조적 상태: `:first-child`, `:last-child`, `:nth-child(n)`, `:first-of-type`, `:last-of-type` 등 자식 요소 순서에 기반한 선택[cite: 627, 628].
+
+---
+
+## 3. CSS 속성
+
+### 3.1 텍스트 및 서식
+* [cite_start]`font-family`: 글꼴 지정 (serif, sans-serif 등)[cite: 679, 680, 683, 684].
+* [cite_start]`font-size`: 텍스트 크기 지정[cite: 689, 690].
+* [cite_start]`font-weight`: 텍스트 굵기 지정 (숫자 또는 키워드)[cite: 692, 693].
+* [cite_start]`font-style`: 글꼴 스타일 지정 (normal, italic, oblique)[cite: 698, 699, 702, 703, 704].
+* [cite_start]`font-variant`: 소문자를 작은 대문자로 변경 (small-caps)[cite: 706, 707, 711].
+* [cite_start]`color`: 텍스트 색상 지정 (키워드, RGB, HEX 등)[cite: 670, 671, 672, 712, 713].
+* [cite_start]`text-align`: 텍스트 정렬 (left, center, right, justify)[cite: 716, 717, 720, 721, 722, 723].
+* [cite_start]`text-decoration`: 선 긋기 장식 (none, line-through, overline, underline)[cite: 725, 726, 729, 730, 731, 732].
+* [cite_start]`letter-spacing`: 자간 지정[cite: 734, 735].
+* [cite_start]`line-height`: 행간 지정[cite: 747, 748].
+
+### 3.2 박스 모델 및 배경
+* [cite_start]`margin`: 외부 여백을 지정합니다 (단축 및 top/right/bottom/left 개별 속성)[cite: 767, 768, 772].
+* [cite_start]`border`: 테두리를 지정합니다 (`border-width`, `border-style`, `color` 혼합)[cite: 778, 779, 780, 782].
+* [cite_start]`padding`: 내부 여백을 지정합니다[cite: 785, 786].
+* [cite_start]`width`, `height`: content 영역 너비와 높이 지정[cite: 795, 797].
+* [cite_start]`box-sizing`: 너비/높이 기준 영역을 설정합니다 (content-box, border-box)[cite: 799, 801, 802].
+* [cite_start]`display`: 박스 성격을 변경합니다 (block, inline, inline-block, none 등)[cite: 809].
+* [cite_start]`background-color`: 배경색[cite: 811, 812].
+* [cite_start]`background-image`: 배경 이미지 삽입 (`url("")`)[cite: 814, 815, 816].
+* [cite_start]`background-repeat`: 반복 여부 (no-repeat, repeat-x, repeat-y 등)[cite: 818, 819, 822, 823, 824].
+* [cite_start]`background-size`: 배경 크기 (auto, cover, contain 등)[cite: 830, 831, 834, 835, 836].
+* [cite_start]`background-position`: 배경 위치 (x, y 좌표)[cite: 840, 841].
+* [cite_start]`background-attachment`: 스크롤 시 동작 형태 (scroll, fixed, local)[cite: 848, 849, 852, 853, 854].
+* [cite_start]`background`: 위 모든 배경 속성을 한 번에 지정하는 단축 속성[cite: 856, 857].
+
+### 3.3 위치, 전환, 애니메이션, 변형
+* [cite_start]`position`: 요소 배치 방식을 결정합니다 (static, relative, absolute, fixed, sticky)[cite: 869, 872, 873, 874, 875, 876].
+* [cite_start]`z-index`: z축(상하 겹침) 위치 결정[cite: 878].
+* [cite_start]`float` / `clear`: 요소를 공중에 띄워 좌/우 배치(left, right) 및 해당 속성을 해제(clear)[cite: 888, 892, 893, 896, 899, 900, 901].
+* [cite_start]`transition`: 전환 효과의 대상(`property`), 시간(`duration`), 지연(`delay`), 속도(`timing-function`)를 지정[cite: 905, 912, 917, 921, 958].
+* [cite_start]`@keyframes` 및 `animation-*`: 애니메이션 진행 설정(`name`, `duration`, `delay`, `fill-mode`, `iteration-count`, `play-state`, `direction`)[cite: 970, 976, 981, 986, 991, 996, 1000, 1007, 1018].
+* [cite_start]`transform`: 요소 이동(`translate`), 확대/축소(`scale`), 기울임(`skew`), 회전(`rotate`) 등 2차원 변형 지정[cite: 1025, 1029, 1034, 1038, 1042].
+* [cite_start]`transform-origin`: 변형 기준점 변경[cite: 1044, 1045].
+
+### 3.4 1차원 플렉스 박스 (Flexbox) 레이아웃
+* [cite_start]`display: flex` / `inline-flex`: 플렉스 컨테이너 설정[cite: 1139].
+* [cite_start]`flex-direction`: 주축 방향 지정 (row, column 등)[cite: 1141, 1143, 1145].
+* [cite_start]`flex-wrap`: 자동 줄 바꿈 지정 (nowrap, wrap, wrap-reverse)[cite: 1148, 1149, 1150, 1151].
+* [cite_start]`flex-flow`: `flex-direction`과 `flex-wrap`의 단축 속성[cite: 1152].
+* [cite_start]`justify-content`: 주축 방향 아이템 정렬 (flex-start, flex-end, center, space-between, space-around, space-evenly)[cite: 1156, 1158, 1159, 1160, 1161, 1162, 1163].
+* [cite_start]`align-items`: 교차축 방향 전체 정렬 (stretch, flex-start, flex-end, center, baseline)[cite: 1189, 1190, 1191, 1192, 1193, 1194].
+* [cite_start]`align-content`: 교차축 방향 여러 줄 정렬[cite: 1212].
+* [cite_start]`align-self`: 교차축 방향 개별 아이템 정렬[cite: 1213].
+
+### 3.5 2차원 그리드 (Grid) 레이아웃
+* [cite_start]`display: grid` / `inline-grid`: 그리드 컨테이너 설정[cite: 1260].
+* [cite_start]`grid-template-columns` / `grid-template-rows`: 행과 열 구조 지정[cite: 1262].
+* [cite_start]`row-gap` / `column-gap`: 셀 사이 간격 지정[cite: 1265].
+* [cite_start]`align-items` / `justify-items`: 전체 셀 세로/가로 정렬[cite: 1270, 1278].
+* [cite_start]`align-self` / `justify-self`: 개별 셀 세로/가로 정렬[cite: 1275, 1283].
+* [cite_start]`place-items` / `place-self`: `align-*`과 `justify-*`의 단축 속성[cite: 1286, 1288].
+* [cite_start]`grid-template-areas` / `grid-area`: 행열을 이름으로 지정하여 아이템 배치[cite: 1296, 1297].
+* [cite_start]`grid-column` / `grid-row`: 라인 번호를 기준으로 열/행 시작(`start`)과 끝(`end`) 지정 단축 속성[cite: 1312, 1313, 1329, 1330].
+
+### 3.6 반응형 웹 및 미디어 쿼리
+* [cite_start]`@media`: 접속 기기의 종류(`media type`), 해상도(`media feature`)에 따라 조건별 스타일 분기[cite: 1338, 1378, 1387, 1394].
+* [cite_start]조건 속성: `min-width`, `max-width`, `orientation` (portrait/landscape)[cite: 1395, 1396, 1397, 1398].
