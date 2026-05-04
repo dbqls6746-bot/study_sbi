@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        p {
+            font-size: 25px;
+
+        }
+        .container {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+
+        .login {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .sign-up {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid lightgray;
+        }
+
+        .submit {
+            width: 100%;
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            border: none;
+            font-weight: bold;
+        }
+
+        .sns-login {
+            display: block;
+            text-align: center;
+            color: blue;
+            text-decoration: underline;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <p>지금 가입하시면</p>
+    <h2>웰컴쿠폰을 드려요!</h2>
+
+    <br>
+    <div class="tab">
+        <span class="login">로그인</span>
+        <span class="sign-up">회원가입</span>
+    </div>
+
+    <br>
+
+    <form>
+        <div>
+            <label for="email">이메일</label>
+            <input type="text" id="email" class="input" placeholder="이메일을 입력해주세요.">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="username">이름 / 업체명</label>
+            <input type="text" id="username" class="input" placeholder="2자 이상 20자 이하">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pwd">비밀번호</label>
+            <input type="password" id="pwd" class="input" placeholder="영문 숫자 특수문자 조합 6-16자리">
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="pwd-confirm">비밀번호 확인</label>
+            <input type="password" id="pwd-confirm" class="input" placeholder="비밀번호를 다시 입력해주세요.">
+        </div>
+
+        <br>
+
+        <div class="agreement">
+            <input type="checkbox" id="agree">
+            <label for="agree">
+                <u>개인정보수집이용안내</u> 및 <u>약관</u>에 동의 합니다
+            </label>
+        </div>
+
+        <br>
+
+        <button type="submit" class="submit">회원 가입하기</button>
+
+        <div class="sns-login">
+            SNS로 간편하게 가입하기
+        </div>
+    </form>
+
+
+</div>
+
+</body>
+
+</html>
